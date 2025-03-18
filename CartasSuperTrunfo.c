@@ -1,8 +1,9 @@
 #include <stdio.h>
+#define NUM_CARTAS 2
 
 int main() {
 
-    print("Desafio Super Trunfo");
+    printf("Desafio Super Trunfo\n");
 
     char Carta;
     char Estado;
