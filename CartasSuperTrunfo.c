@@ -1,22 +1,51 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    print("Desafio Super Trunfo");
+
+    char Carta;
+    char Estado;
+    char CodigoDaCarta[10];
+    char NomeDaCidade[50];
+    int Populacao;
+    float Area;
+    float PIB;
+    int PontosTuristicos;
+
+    printf("Digite o número da Carta");
+    scanf("%c", &Carta);
+
+    printf("Uma letra de 'A' a 'H' (representando um dos oito estados). ");
+    scanf("%s", &Estado);
+
+    printf("A letra do estado seguida de um número de 01 a 04 (ex: A01, B03) .");
+    scanf("%c", &CodigoDaCarta);
+
+    printf("Digite o Nome da Cidade. ");
+    scanf("%c", &NomeDaCidade);
+
+    printf("Digite o número de habitantes. ");
+    scanf("%d", &Populacao);
+
+    printf("Área em quilômetros quadrados.");
+    scanf("%.2f", &Area);
+
+    printf("Produto Interno Bruto.");
+    scanf("%.2f", &PIB);
+
+    printf("Quantidade de Pontos Turísticos da cidade.");
+    scanf("%d", &PontosTuristicos);
+
+    printf("Carta: %c\n", Carta);
+    printf("Estado:%c\n", Estado);
+    printf("CódigoDaCarta: %s\n", CodigoDaCarta);
+    printf("NomeDaCidade: %c\n", NomeDaCidade);
+    printf("População: %d\n", Populacao);
+    printf("Área: %f\n", Area);
+    printf("ProdutoInternoBruto: %d\n", PIB);
+    printf("PontosTurísticos: %d\n", PontosTuristicos);
 
     return 0;
+    
 }
